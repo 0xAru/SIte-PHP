@@ -1,0 +1,96 @@
+@media (max-width: 1035px) {
+
+    h1>a>img {
+        width: 100px;
+        margin-top: 0.5em;
+    }
+
+    nav .nav-list {
+        display: grid;
+        position: absolute;
+        background: #1c1737ef;
+        border: 1px solid silver;
+        border-radius: 20px;
+        top: 129px;
+        transform: translateY(-200%);
+        transition: .6s;
+        padding: 1.5em 1em;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    .burger {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav .nav-list .nav-item {
+        font-size: 1.3em;
+        text-align: center;
+        padding-top: 0.5em;
+    }
+
+    nav .navbar-toggler {
+        display: grid !important;
+
+    }
+
+    header nav ul li a:hover:after {
+        width: 40%;
+        background: white;
+    }
+
+    .button-nav {
+        padding-top: 0.5em;
+    }
+
+    .button-nav a {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    main {
+        padding-top: 1em;
+    }
+
+    .main-title {
+        padding: 0;
+    }
+
+    .presentation {
+        flex-direction: column;
+    }
+
+    #prof {
+        width: 200px;
+    }
+
+    article h4 {
+        margin: 0.7em;
+    }
+
+    article p {
+        padding: 0em 2em;
+    }
+
+    .list {
+        padding: 0em 3em;
+    }
+
+    .example {
+        flex-direction: column;
+    }
+
+    .pre {
+        padding: 0;
+    }
+
+    .pre img {
+        max-width: 100%;
+    }
+    
+    footer p {
+        padding-left: 9em;
+    }
+    
+}

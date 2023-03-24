@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Purple+Purse&family=Shantell+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/faviconPHP.png" type="image/png">
+    <title>Fonctionnalités avancées</title>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="toggle">
+        <nav>
+            <h1><a href="../index.html" class="navbar-brand"><img src="../images/PHP-logo.svg" alt="Logo PHP"></a></h1>
+            <div class="burger">
+                <label class="navbar-toggler" for="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span></label>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="fonctionnalites_base.html" class="nav-link">Fonctionnalités de base</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fonctionnalites-avancees.html" class="nav-link">Fonctionnalités avancées</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./framework.html" class="nav-link">Frameworks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="utilisation.html" class="nav-link">Utilisation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-nav"><a href="contact.html">Contact</a></div>
+        </nav>
+    </header>
+    <div class="progress">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+    <main>
+        <h2 hidden>Les fonctionnalités avancées de PHP</h2>
+        <section>
+            <h4 class="main-title">La programmation orientée objet</h4>
+            <article class="presentation">
+                <img src="../images/chibi-POO.png" alt="Personnage qui étudie la programmation orientée objet"
+                    class="prof">
+                <p class="para-prof">La programmation orientée objet (POO) est une technique de programmation avancée
+                    qui permet de
+                    structurer le code en utilisant des concepts tels que les classes, les objets, les propriétés et les
+                    méthodes. En PHP, la POO est largement utilisée pour créer des applications web, des systèmes de
+                    gestion de bases de données et d'autres types de programmes.
+                    <br>
+                    Dans la POO en PHP, une classe est un modèle ou un plan qui décrit les propriétés et les
+                    comportements des objets. Les objets sont des instances de classe qui contiennent des données et des
+                    méthodes pour travailler avec ces données. Les propriétés sont des variables qui stockent des
+                    données dans un objet, tandis que les méthodes sont des fonctions qui manipulent ces données.
+                    <br>
+                    L'avantage de la POO en PHP est qu'elle permet de créer des programmes modulaires et faciles à
+                    maintenir, car elle permet de réutiliser du code existant et de le structurer en modules autonomes
+                    et bien définis. Elle offre également une abstraction efficace pour les données et les
+                    fonctionnalités, permettant de créer des programmes plus flexibles et évolutifs.
+                    <br>
+                    En somme, la POO en PHP est une technique puissante et efficace pour structurer et organiser le
+                    code, permettant de créer des programmes plus modulaires, flexibles et maintenables.
+                </p>
+            </article>
+            <article>
+                <div class="example">
+                    <div class="pre">
+                        <img src="../images/exemple-POO.jpg" alt="Exemple programmation orientée objet">
+                    </div>
+                    <p class="para-example">Ici nous avons défini une classe Personne qui a deux propriétés publiques
+                        $nom et $age et une méthode publique parler(). La méthode parler() affiche une phrase en
+                        utilisant
+                        les valeurs des propriétés $nom et $age.
+                        Ensuite, nous avons créé un objet $personne1 à partir de la classe Personne, en lui attribuant
+                        des valeurs pour les propriétés nom et age. Nous avons ensuite appelé la méthode parler() sur
+                        l'objet $personne1, qui affiche la phrase "Je m'appelle Jean et j'ai 30 ans.".
+                        <br>
+                        <br>
+                        Cet exemple est assez simple, mais il montre comment utiliser la POO en PHP pour créer des
+                        classes, des propriétés et des méthodes, ainsi que pour créer et manipuler des objets.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h4>La manipulation de fichiers en PHP</h4>
+                <p>En PHP, il est possible de manipuler des fichiers de différentes manières. La lecture et l'écriture
+                    de fichiers sont des opérations courantes en programmation. Pour lire un fichier, on peut utiliser
+                    la fonction fopen() qui ouvre le fichier en mode lecture. Ensuite, on peut utiliser la fonction
+                    fgets() pour lire chaque ligne du fichier jusqu'à la fin du fichier.</p>
+                <div class="example">
+                    <div class="pre">
+                        <img src="../images/exemple-lecture-fichier.jpg" alt="Exemple de lecture de fichier">
+                    </div>
+                    <p class="para-example">Ce code permet de lire un fichier texte nommé "monfichier.txt" en mode
+                        lecture ("r"). La fonction fopen() ouvre le fichier et retourne un pointeur de fichier ($file)
+                        qui sera utilisé pour lire les données de ce fichier. Ensuite, une boucle while est utilisée
+                        pour lire chaque ligne du fichier jusqu'à la fin (feof() signifie "file end of file", fin de
+                        fichier en français). À chaque tour de boucle, la fonction fgets() lit une ligne du fichier et
+                        la stocke dans la variable $line. Cette ligne est ensuite affichée à l'écran avec la commande
+                        echo $line;. Une fois la lecture du fichier terminée, la fonction fclose() est utilisée pour
+                        fermer le pointeur de fichier et libérer les ressources associées au fichier.</p>
+                </div>
+                <div class="example">
+                    <div class="pre">
+                        <img src="../images/exemple-ecriture-fichier.jpg" alt="Exemple d'écriture dans un fichier">
+                    </div>
+                    <p class="para-example">Ce code permet d'écrire dans un fichier texte nommé "monfichier.txt" en mode
+                        écriture ("w"). La fonction fopen() ouvre le fichier et retourne un pointeur de fichier ($file)
+                        qui sera utilisé pour écrire des données dans le fichier. Ensuite, deux appels à la fonction
+                        fwrite() sont utilisés pour écrire deux chaînes de caractères dans le fichier, chacune sur une
+                        ligne différente. Le \n à la fin de chaque chaîne de caractères indique un retour à la ligne,
+                        afin que les deux phrases soient écrites sur des lignes différentes dans le fichier. Une fois
+                        l'écriture dans le fichier terminée, la fonction fclose() est utilisée pour fermer le pointeur
+                        de fichier et libérer les ressources associées au fichier.</p>
+                </div>
+                <div class="example">
+                    <div class="pre">
+                        <img src="../images/exemple-renommage-fichier.jpg" alt="Exemple de renommage d'un fichier">
+                    </div>
+                    <p class="para-example">La fonction rename() est utilisée pour renommer le fichier. Cette fonction
+                        prend deux arguments : le premier argument est le nom de l'ancien fichier ($oldname), et le
+                        deuxième argument est le nouveau nom de fichier ($newname). Une fois cette fonction appelée, le
+                        fichier "ancienfichier.txt" sera renommé "nouveaunom.txt".</p>
+                </div>
+                <div class="example">
+                    <div class="pre">
+                        <img src="../images/exemple-suppression-fichier.jpg" alt="Exemple de suppression d'un fichier">
+                    </div>
+                    <p class="para-example">La fonction unlink() est utilisée pour supprimer le fichier. Cette fonction
+                        prend un seul argument, qui est le nom du fichier à supprimer. Une fois cette fonction appelée,
+                        le fichier "fichierasupprimer.txt" sera supprimé. Il est important de noter que cette action est
+                        définitive et qu'il n'est pas possible de récupérer le contenu du fichier supprimé. Il est donc
+                        recommandé de bien réfléchir avant de supprimer un fichier.</p>
+                </div>
+            </article>
+            <article>
+                <h4>Les bases de données et MySQL</h4>
+                <p>Une base de données est un outil informatique permettant de stocker et de gérer de grandes quantités
+                    d'informations. Les bases de données sont utilisées dans de nombreux domaines, notamment pour
+                    stocker des informations sur les clients, les produits, les transactions, etc.</p>
+                <p><strong>MySQL</strong> est un système de gestion de bases de données relationnelles très populaire et
+                    largement utilisé dans le monde entier. Il est open-source, ce qui signifie que son code source est
+                    accessible à tous, et il est gratuit à utiliser. Pour interagir avec une base de données MySQL, il
+                    est courant d'utiliser le langage SQL (Structured Query Language). SQL permet de créer, modifier,
+                    supprimer ou interroger des données dans une base de données. Voici quelques exemples de commandes
+                    SQL :</p>
+                <div class="example">
+                    <div class="pre">
+                        <img src="../images/exemple-MySQL.jpg" alt="Exemple de commandes SQL">
+                    </div>
+                    <p class="para-example">La première commande crée une nouvelle base de données nommée "mydatabase".
+                        <br>
+                        La deuxième commande crée une nouvelle table nommée "users" avec trois colonnes : "id", "name"
+                        et "email". La colonne "id" est définie comme clé primaire et auto-incrémentée, ce qui signifie
+                        qu'elle est unique pour chaque enregistrement et que sa valeur est automatiquement incrémentée à
+                        chaque nouvel enregistrement ajouté à la table.
+                        <br>
+                        La troisième commande ajoute un nouvel enregistrement à la table "users" avec le nom et
+                        l'adresse e-mail de "John Doe".
+                        <br>
+                        La quatrième commande récupère toutes les lignes de la table "users" et les affiche.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© Copyright</p>
+        <div class="social">
+            <a href=""><img src="../images/YT-logo.png" alt="icône youtube"></a>
+            <a href=""><img src="../images/FB-logo.png" alt="icône facebook"></a>
+            <a href=""><img src="../images/Insta-logo.png" alt="icône instagram"></a>
+            <a href=""><img src="../images/Twitter-logo.png" alt="icône twitter"></a>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>

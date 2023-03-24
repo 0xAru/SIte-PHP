@@ -1,0 +1,89 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Purple+Purse&family=Shantell+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/faviconPHP.png" type="image/png">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="toggle">
+        <nav>
+            <h1><a href="../index.html" class="navbar-brand"><img src="../images/PHP-logo.svg" alt="Logo PHP"></a></h1>
+            <div class="burger">
+                <label class="navbar-toggler" for="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span></label>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="fonctionnalites_base.html" class="nav-link">Fonctionnalités de base</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fonctionnalites-avancees.html" class="nav-link">Fonctionnalités avancées</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="framework.html" class="nav-link">Frameworks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="utilisation.html" class="nav-link">Utilisation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-nav"><a href="">Contact</a></div>
+        </nav>
+    </header>
+    <div class="progress">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+    <main>
+        <h2 class="title-contact">Contactez-nous !</h2>
+        <form action="" method="POST" class="contact-form">
+            <div>
+                <label for="lastname">Nom:</label>
+                <input type="text" id="lastname">
+            </div>
+            <br>
+            <div>
+                <label for="firstname">Prénom:</label>
+                <input type="text" id="firstname">
+            </div>
+            <br>
+            <div>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail">
+            </div>
+            <br>
+            <div>
+                <label for="subject">Objet:</label>
+                <input type="text" id="subject">
+            </div>
+            <br>
+            <div>
+                <label for="message">Message:</label>
+                <br>
+                <textarea name="message" id="message" cols="50" rows="10"></textarea>
+            </div>
+            <br>
+            <div><input type="submit" class="submit"></div>
+        </form>
+    </main>
+    <footer>
+        <p>© Copyright</p>
+        <div class="social">
+            <a href=""><img src="../images/YT-logo.png" alt="icône youtube"></a>
+            <a href=""><img src="../images/FB-logo.png" alt="icône facebook"></a>
+            <a href=""><img src="../images/Insta-logo.png" alt="icône instagram"></a>
+            <a href=""><img src="../images/Twitter-logo.png" alt="icône twitter"></a>
+        </div>
+    </footer>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Purple+Purse&family=Shantell+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/faviconPHP.png" type="image/png">
+    <title>L'utilisation de PHP</title>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="toggle">
+        <nav>
+            <h1><a href="../index.html" class="navbar-brand"><img src="../images/PHP-logo.svg" alt="Logo PHP"></a></h1>
+            <div class="burger">
+                <label class="navbar-toggler" for="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span></label>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="fonctionnalites_base.html" class="nav-link">Fonctionnalités de base</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fonctionnalites-avancees.html" class="nav-link">Fonctionnalités avancées</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="framework.html" class="nav-link">Frameworks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="utilisation.html" class="nav-link">Utilisation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-nav"><a href="contact.html">Contact</a></div>
+        </nav>
+    </header>
+    <div class="progress">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+    <main>
+        <h2 hidden>L'Utilisation de PHP dans le développement web</h2>
+        <section>
+            <h4 class="main-title">L'intégration de PHP dans des pages HTML</h4>
+            <article class="presentation">
+                <img src="../images/chibi-openspace.png" alt="personnages travaillant dans un open space" class="prof">
+                <div class="para-prof">
+                    <p>PHP est un langage de programmation côté serveur utilisé pour créer des pages web dynamiques.
+                        L'intégration de PHP dans les pages HTML est simple et peut être réalisée de plusieurs manières.
+                        L'une des méthodes courantes consiste à incorporer des blocs de code PHP directement dans le
+                        code HTML en utilisant la balise "&lsaquo;?php ?&rsaquo;" pour encadrer le code PHP. Ainsi, le
+                        code PHP peut interagir avec les variables et les données stockées sur le serveur et générer du
+                        contenu dynamique pour la page web. Il est également possible de séparer le code PHP du code
+                        HTML en utilisant un modèle de conception MVC (Modèle-Vue-Contrôleur). Dans ce modèle, le code
+                        PHP est utilisé pour récupérer les données à partir de la base de données et générer une vue
+                        HTML pour l'affichage des données. La vue HTML est ensuite intégrée dans la page web principale.
+                        L'utilisation de cette méthode permet de séparer les préoccupations et d'améliorer la
+                        maintenabilité du code. En somme, l'intégration de PHP dans les pages HTML est une pratique
+                        courante qui permet de créer des pages web dynamiques et personnalisées en utilisant un langage
+                        de programmation côté serveur.</p>
+                </div>
+            </article>
+            <article>
+                <h4>L'utilisation de PHP pour générer des pages dynamiques</h4>
+                <p>L'utilisation de PHP pour générer des pages dynamiques offre de nombreux avantages. Tout d'abord, cela permet aux développeurs de créer des pages web qui sont dynamiques et interactives, offrant ainsi une meilleure expérience utilisateur. Par exemple, les développeurs peuvent utiliser PHP pour créer des formulaires de saisie qui permettent aux utilisateurs d'envoyer des données, des boutons de commande qui permettent aux utilisateurs de naviguer dans une application web, ou encore des animations en temps réel qui offrent une expérience plus immersive.</p>
+                <p>En outre, PHP offre une grande flexibilité et une grande extensibilité. Il existe une large communauté de développeurs qui ont créé des frameworks et des bibliothèques de code pour faciliter le développement avec PHP. Ces outils permettent aux développeurs de créer des applications web plus rapidement et plus facilement.</p>
+            </article>
+            <article>
+                <h4>L'utilisation de PHP pour créer des formulaires et gérer les données de formulaire</h4>
+                <p>PHP est souvent utilisé pour créer des formulaires sur les pages web et gérer les données soumises par les utilisateurs via ces formulaires. Les formulaires peuvent être utilisés pour collecter des informations telles que des noms, des adresses e-mail, des numéros de téléphone, etc., et pour permettre aux utilisateurs d'interagir avec l'application web en soumettant des commentaires, des avis, des requêtes, des commandes, etc.</p>
+                <p>Pour créer des formulaires avec PHP, les développeurs peuvent utiliser des balises HTML pour créer des champs de formulaire tels que des zones de texte, des cases à cocher, des boutons radio, des listes déroulantes, etc. Ensuite, ils peuvent utiliser PHP pour traiter les données soumises par les utilisateurs, vérifier les erreurs de saisie et stocker les données dans une base de données ou les envoyer par e-mail.</p>
+                <p>PHP offre également des fonctions prédéfinies pour la validation des données de formulaire, telles que la vérification de la présence d'un champ, la vérification de la longueur d'une chaîne de caractères ou la validation des adresses e-mail. Les développeurs peuvent également personnaliser ces fonctions de validation pour répondre aux besoins spécifiques de leur application web.</p>
+                <p>En outre, PHP offre des fonctionnalités avancées pour gérer les cookies et les sessions, ce qui permet aux développeurs de stocker des informations d'utilisateur telles que les préférences, les identifiants de connexion et les paniers d'achat entre les différentes pages web de l'application.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© Copyright</p>
+        <div class="social">
+            <a href=""><img src="../images/YT-logo.png" alt="icône youtube"></a>
+            <a href=""><img src="../images/FB-logo.png" alt="icône facebook"></a>
+            <a href=""><img src="../images/Insta-logo.png" alt="icône instagram"></a>
+            <a href=""><img src="../images/Twitter-logo.png" alt="icône twitter"></a>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
